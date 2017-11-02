@@ -1,0 +1,39 @@
+@var playerHand; // Total of players cards
+@var dealerHand; // Total of dealers cards
+@var newCard;    // Randomly generated number between 1 and 10
+
+
+Begin Program
+
+Do 
+	Greet Player;
+	Generate two random numbers for new hand;
+	Display players initial hand;
+	Ask player if they'd like to hit or stay;
+	If player chooses to hit
+		Do
+			Generate random number for new Card;
+			Hand equals Hand + New Card;
+			Ask Player if they'd like to hit or stay;
+		While (Hit equals yes and Hand is less than or equal to 21);
+	
+	Display Hand;
+	If Hand equals 21, Display "BlackJack!";
+	Else if Hand is greater than 21. Display "Busted!";
+	
+	Display Generated Dealer Hand;
+	While Dealer Hand += Random Number between 1 and 10 is not greater than 21;
+		Dealer Hand += Random Number;
+	
+	If Player Hand is greater than Dealer Hand and is not greater than 21;
+		Then Display "You Win!";
+	Else if Player Hand is equal to Dealer Hand;
+		Then Display "Tie!";
+	Else	
+		Display "Dealer Wins";
+		
+	Ask Player if they would like to play again;
+While Play Again equals Yes;
+
+End Program
+	
